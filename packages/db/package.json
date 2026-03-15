@@ -8,6 +8,7 @@
     "generate": "drizzle-kit generate",
     "push": "drizzle-kit push"
   },
+  "type": "module",
   "exports": {
     ".": "./src/index.ts"
   },
@@ -15,14 +16,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "drizzle-orm": "^0.45.1",
     "pg": "^8.20.0",
     "postgres": "^3.4.8"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@repo/schema": "workspace:*",
-    "drizzle-kit": "^0.31.9",
     "typescript": "^5.9.3"
   }
 }

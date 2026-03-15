@@ -2,11 +2,17 @@ version: "3.8"
 
 services:
   pgdb:
-    image: postgres:alpine
+    image: postgis/postgis:16-3.4
     container_name: pgdb_cont
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DATABASE=runner-iodb
+      - POSTGRES_DB=runneriodb
     ports:
       - "5432:5432"
+    volumes:
+      - ./infra/pgdb/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pg-data-vol:/var/lib/postgresql/data
+
+volumes:
+  pg-data-vol: {}
