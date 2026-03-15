@@ -1,11 +1,12 @@
-version:3.8
+version: "3.8"
+
 services:
   pgdb:
-    image:alpine-p;ostgress
-    container_name:pgdb_container
-    environment
-      -POSTGRES_USER:user 
-      -POSTGRES_PASSWORD:password 
-      -POSTGRES_DATABASE:runner-io
+    image: postgres:alpine
+    container_name: pgdb_cont
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DATABASE=runner-iodb
     ports:
-      -5432:542
+      - "5432:5432"
