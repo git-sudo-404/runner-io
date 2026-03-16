@@ -9,12 +9,17 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@types/uuid": "^11.0.0",
     "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
     "turbo": "^2.8.16",
     "typescript": "5.9.2"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
   }
 }

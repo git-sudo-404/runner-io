@@ -5,8 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "drizzle-kit generate",
-    "push": "drizzle-kit push"
+    "db:seed": "tsc && node dist/seed.js"
   },
   "type": "module",
   "exports": {
@@ -17,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "pg": "^8.20.0",
-    "postgres": "^3.4.8"
+    "postgres": "^3.4.8",
+    "@repo/schema": "workspace:*"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
