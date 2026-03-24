@@ -27,8 +27,8 @@
 
 - Develop the mobile app for androind and ios
 
-<!-- NOTE: -->
+<!-- <!-- NOTE: --> Switch to ReactJs for the frontend , Reduce the unnecessay complexity of NextJs atleast in v1 -->
 
-<!-- ->add the button , and some styles in the packages so that it'll be shared between the webclient and the docs -->
-
-<!-- NOTE: Do that Live - ddos - map as a Next Js monorepo for practice , create a sample repo for NextJs n Google OAuth ,Add like a redis , n practise Classes n Objeccts -->
+      <!-- It makes more sense to use React since there'll be websockets , which will be hard to handle in NextJs using serverles fucntions anol... -->
+      <!-- Prolly using Go is much better for the backend. -->
+      <!-- So, that it'll be easy to start with the RaftKV Next -->
